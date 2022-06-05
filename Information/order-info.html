@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href="order-info.css">
+
+</head>
+
+<!-- Checkout Header -->
+<header>
+    <span class="order-header">
+        <img class="lock" src="images/172497_lock_icon.svg">
+        <img class="logo" src="images/original_banner.jpeg">
+        <img class="lock" src="images/172497_lock_icon.svg">
+    </span>
+</header>
+<body>
+<!-- Information form and Order summary -->
+    <section class="container">
+        <h3 class="order-steps">
+            <a href="#">Shopping Cart</a> > <b><a href="#">Information</a></b></h3>
+            <h1>Information</h1>
+
+<!-- Information form -->
+<form class = "info-form" action="order-info.html" method="post" id="signup">
+        <div class="block">
+            <div class="user-info">
+                <div class="user-box">
+                    <h3 class="info-label">CONTACT INFORMATION</h3>
+                    <p>
+                        <input class="info-text" type="text" id="first-name" name="username" placeholder="first name" required>
+                        <small></small>
+
+                    </p>
+                    <p>
+                        <input class="info-text" type="text" id="last-name" name="username" placeholder="last name" required>
+                        <small></small>
+                    </p>
+                    <p>
+                        <input class="info-text" type="text" id="email-address" name="emailaddress" placeholder="email address" required>
+                        <small></small>
+
+                    </p>
+                </div>
+                <div class="user-box" style="height:100px;">
+                    <label class="info-label"for="shipping-method">               
+                        <h3 class="info-label">DELIVERY METHOD</h3>
+                    </label>
+                    <select id="shipping-method" name="shipping-method">
+                        <option value="Address">Ship to Address</option>
+                        <option value="pick-up">Click and Collect - Free</option>
+                    </select>
+                </div>
+                <div class="user-box" style="height:460px;">
+                    <h3 class="info-label">SHIPPING ADDRESS</h3>
+                    <p>
+                        <input class="info-text" type="text" id="country" name="country" placeholder="Country/Region" required>
+                    </p>
+                    <p>
+                        <input class="info-text" type="text" id="Address-1" name="Address-1" placeholder="Address line 1" required>
+                    </p>
+                    <p>
+                        <input class="info-text" type="text" id="Address-2" name="Address-2" placeholder="Address line 2" required>
+                    </p>
+                    <p>
+                        <input class="info-text" type="text" id="company" name="company" placeholder="Company (optional)"required>
+                    </p>
+                    <div class="inline-input">
+                        <span>
+                            <p>
+                                <input class="info-text" type="text" id="city" name="city" placeholder="City" required>
+                            </p>
+                            <p>
+                                <input class="info-text" type="text" id="state" name="state" placeholder="State/Territory" required>
+                            </p>
+                            <p>
+                                <input class="info-text" type="text" id="postcode" name="postcode" placeholder="Postcode" required>
+                            </p>  
+                    </span>
+                    </div>
+                    <p>
+                        <input class="info-text" type="text" id="phone" name="phone" placeholder="Phone Number (optional)">
+                    </p>
+                    
+                    
+                </div>
+                <input class="btn-checkout" type="submit" value="Continue to Shipping">
+            </div>
+        </form>
+
+        <!-- Order Summary -->
+      
+            <aside class="cart-total">
+                <h2 class="order-summary">ORDER SUMMARY</h2>
+                <p class="divder">_______________________</p>
+                <p>
+                    <span>Subtotal:</span>
+                    <span class="summary-info">$28.00</span>
+                </p>
+                <p>
+                    <span>Shipping</span>
+                    <span class="summary-info">-</span>
+                </p>
+                <p>
+                    <span>Number of Items:</span>
+                    <span class="summary-info">2</span>
+                </p>
+                <p class="divder">_______________________</p>
+                <p>
+                    <span><b>TOTAL:</b></span>
+                    <span><b>$28.00</b></span>
+                </p>
+                <div class = "cart-btns">
+                    <span class = "submission-status">
+                        
+                      </span>
+                    <button href="file:///Users/stephaniecheng/Documents/GitHub/stephaniexin02.github.io/cook_and_young/product-trail/prod-page.html#" type = "button" class = "btn-checkout"> Continue to Shipping
+                    </button>
+                    <button type = "button" class = "btn-home"> Return to cart
+                    </button>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+<!-- Checkout Footer -->
+    <footer>
+        <span class="order-footer">
+            <img class="lock" src="images/172497_lock_icon.svg">
+            <img class="logo" src="images/original_banner.jpeg">
+            <img class="lock" src="images/172497_lock_icon.svg">
+        </span>
+    </footer>
+    <script src="info copy.js"></script>
+</body>
+
+</html>
