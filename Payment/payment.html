@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <script href="pp.js"></script>
+
+</head>
+<!-- Main Header --> 
+<header>
+    <span class="order-header">
+        <img class="lock" src="images/172497_lock_icon.svg">
+            <img class="logo" src="images/original_banner.jpeg">
+            <img class="lock" src="images/172497_lock_icon.svg">
+    </span>
+</header>
+<body>
+    <!-- Website Navigator --> 
+
+    <section class="container">
+        <h3 class="order-steps">
+            <a href="file:///Users/stephaniecheng/Documents/GitHub/stephaniexin02.github.io/cook_and_young/sc-copy/shopping-cart.html#">Shopping Cart</a> > <a href="#">Information</a>> <a href="#">Shipping</a> > <a href="#"><b>Payment</b></a> > <a href="#">Review</a></h3>
+            <h1>Payment</h1>
+        
+        <!-- Payment Form--> 
+        <section class="block">
+            <form action="payment.js" class="user-info" name = "payment-form" onsubmit = "return(validate());">
+                <div class="user-box" style="height:120px;">
+                    <h3 class="info-label">PAYMENT METHOD</h3>
+                    <p>
+                        <input type="radio" id="debit" name="payment" value="debit" checked error>
+                        <label class="payment-op" for="payment">Debit/Credit Card</label><br>                    
+                    </p>
+                    <p>
+                        <input type="radio" id="paypal" name="payment" value="paypal">
+                        <label class="payment-op" for="payment">Paypal</label><br>                    
+                    </p>
+                </div>
+                <div class="user-box" style="height:230px;">
+                    <h3 class="info-label">PAYMENT DETAILS</h3>
+                    <p>
+                        <input class="info-text" type="text" id="card-name" name="cardname" placeholder="Name on Card" required>
+                    </p>
+
+                    <p>
+                        <input class="info-text" type="text" id="card-num" name="cardnumber" placeholder="Card Number" maxlength = "16" minlength = "15" required>
+                    </p>
+                    <div class="inline-input">
+                        <span>
+                            <p>
+                                <input class="info-text" type="text" id="expiry" name="expiry" placeholder="Expiry Date" maxlength = "4" minlength = "4" required>
+                            </p>
+                            <p>
+                                <input class="info-text" type="text" id="CVC" name="CVC" placeholder="CVC Number" maxlength = "3" minlength = "3" required>
+                            </p>
+                    </span>
+                    </div>
+                </div>
+                <input class="btn-checkout" type="submit" value="Confirm Order">  
+            </form>
+            
+            <!-- Order Summary --> 
+            <aside class="cart-total">
+                <h2 class="order-summary">ORDER SUMMARY</h2>
+                <p class="divder">_______________________</p>
+                <p>
+                    <span>Subtotal:</span>
+                    <span class="summary-info">$28.00</span>
+                </p>
+                <p>
+                    <span>Shipping</span>
+                    <span class="summary-info">$8.00</span>
+                </p>
+                <p>
+                    <span>Number of Items:</span>
+                    <span class="summary-info">2</span>
+                </p>
+                <p class="divder">_______________________</p>
+                <p>
+                    <span><b>TOTAL:</b></span>
+                    <span><b>$36.00</b></span>
+                </p>
+                <div class = "cart-btns">
+                    <button type = "button" class = "btn-checkout"> CONFIRM
+                    </button>
+                    <button type = "button" class = "btn-home"> Return to Shipping
+                    </button>
+                </div>
+            </aside>
+        </section>
+    </section>
+    <!-- Main Footer --> 
+    <footer>
+        <span class="order-footer">
+            <img class="lock" src="images/172497_lock_icon.svg">
+            <img class="logo" src="images/original_banner.jpeg">
+            <img class="lock" src="images/172497_lock_icon.svg">
+        </span>
+    </footer>
+</body>
+
+</html>

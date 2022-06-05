@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping</title>
+    <link rel="stylesheet" href="shipping.css">
+
+</head>
+
+<body>
+    <!--Checkout Header-->
+    <header>
+        <span class="order-header">
+            <img class="lock" src="images/172497_lock_icon.svg">
+            <img class="logo" src="images/original_banner.jpeg">
+            <img class="lock" src="images/172497_lock_icon.svg">
+     </span>
+    </header>
+    
+    <!--Checkout Form-->
+    <section class="container">
+        <h3 class="order-steps">
+            <a href="file:///Users/stephaniecheng/Documents/GitHub/stephaniexin02.github.io/cook_and_young/sc-copy/shopping-cart.html#">Shopping Cart</a> > <a href="#">Information</a>> <a href="#"><b>Shipping</a></b> > <a href="#">Payment</a> > <a href="#">Review</a></h3>
+            <h1>Shipping</h1>
+
+        <!--Shipping Form-->
+        <div class="block">
+            <form action="shipping.js" class="user-info" name = "shipping-form" onsubmit = "return(validate());">
+            <div class="user-info">
+                <div class="user-box" style="height:250px;">
+                    <span class="collected-info">
+                        
+                        <!--Previous Information-->
+                        <h3 class="info-label">Your Information:</h3>
+                        <p>
+                            <h5 class="sub-heading">Contact:</h5>
+                            <input class="info-text" type="text" id="collected-email" name="email" placeholder="email@email.com" >
+                        </input>
+                        <p>
+                            <a href="#" class="change">Change</a>
+                        </p>
+                        <br>
+                        <p>
+                            <h5 class="sub-heading">Ship to:</h5>
+                            <input class="info-text" type="text" id="collected-email" name="email" placeholder="Adress Street">
+                        </p>
+                        <p>
+                            <a href="#" class="change">Change</a>
+                        </p>
+                    </span>
+                </div>
+                
+                <div class="user-box" style="height:120px;">
+                    <h3 class="info-label">SHIPPING ADDRESS</h3>
+                    <p>
+                        <input type="radio" id="express" name="shipping" value="express" checked>
+                        <label class="shipping-op" for="shipping">Express Shipping - <b>$14.00</b></label><br>                    
+                    </p>
+                    <p>
+                        <input type="radio" id="standard" name="shipping" value="standard">
+                        <label class="shipping-op" for="shipping">Standard Shipping - <B>$8.00</B></label><br>                    
+                    </p>
+                </div>
+            </div>
+            <input class="btn-checkout" type="submit" value="Continue to Payment">
+            </form>
+
+            <!--Order Summary-->
+            <aside class="cart-total">
+                <h2 class="order-summary">ORDER SUMMARY</h2>
+                <p class="divder">_______________________</p>
+                <p>
+                    <span>Subtotal:</span>
+                    <span class="summary-info">$28.00</span>
+                </p>
+                <p>
+                    <span>Shipping</span>
+                    <span class="summary-info">-</span>
+                </p>
+                <p>
+                    <span>Number of Items:</span>
+                    <span class="summary-info">2</span>
+                </p>
+                <p class="divder">_______________________</p>
+                <p>
+                    <span><b>TOTAL:</b></span>
+                    <span><b>$24.00</b></span>
+                </p>
+                <div class = "cart-btns">
+                    <button type = "button" class = "btn-checkout"> Continue to Payment
+                    </button>
+                    <button type = "button" class = "btn-home"> Return to Information
+                    </button>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!--Checkout Footer-->
+    <footer>
+        <span class="order-footer">
+            <img class="lock" src="images/172497_lock_icon.svg">
+            <img class="logo" src="images/original_banner.jpeg">
+            <img class="lock" src="images/172497_lock_icon.svg">
+       </span>
+    </footer>
+</body>
+
+</html>
