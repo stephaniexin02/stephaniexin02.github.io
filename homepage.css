@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
 
+/*General Page Grid*/
 *{
     margin:0;
     padding:0;
@@ -15,6 +16,8 @@ body {
     min-height:100vh;
     background-color: white;
 }
+
+/*Navigation Header*/
 header{
     position: fixed;
     top:0;
@@ -114,6 +117,7 @@ header #searchbar{
     display:initial;
 }
 
+/*Announcement section*/
 .announcement{
 padding: 5rem;
 display: block;
@@ -124,55 +128,13 @@ height: auto;
 }
 .desktop-ann{
     border-radius: 5rem;
-
-
 }
 .mobile-ann{
     display: none;
 }
 
 
-
-.facebook{
-    background-color: #706D6D;
-    width: 100%;
-}
-.desktop-fb img{
-    max-width: 5000px;
-    height: auto;
-    width: 110%;
-    padding: 2rem 4rem;
-
-    }
-
-.footer{
-    background-color: #FDF8E5;
-    width: 100%;
-    color: #706D6D;
-    font-size: 10px;
-}
-
-.row .column a{
-text-decoration: none;
-color: #706D6D;
-font-size: 10px;
-}
-
-.column{
-    float: left;
-    width: 33.33%;
-    padding: 2rem 4rem;
-    height: auto;
-}
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
-.footer-logo img{
-width: 5%;
-}
-
+/*Featured Catergories*/
 
 .Catergory{
     font-size: 25px;
@@ -321,12 +283,24 @@ img{
 }
 
 
+
+/*Social Media Section*/
+
 .facebook{
+    background-color: #706D6D;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin: 5rem 5rem 0rem 0rem;
     height: 35rem;
 }
+.desktop-fb img{
+    max-width: 5000px;
+    height: auto;
+    width: 110%;
+    padding: 2rem 4rem;
+
+    }
 
 .social-img{
     justify-content: center;
@@ -337,51 +311,46 @@ img{
 }
 
 
+/*Footer*/
+
+.footer{
+    background-color: #FDF8E5;
+    width: 100%;
+    color: #706D6D;
+    font-size: 10px;
+}
+
+.row .column a{
+text-decoration: none;
+color: #706D6D;
+font-size: 10px;
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 2rem 4rem;
+    height: auto;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+.footer-logo img{
+width: 5%;
+}
+
+
+/*Featured Catergory responsivenessx*/
+
+
 @media screen and (min-width: 992px){
     .product-items{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-@media screen and (max-width: 992px){
-    .row{
-        margin-left: 2rem;
-            }
-    
-    .mobile-fb{
-        display: initial;
-        margin-top: 4rem;
-    }
-    .desktop-fb{
-        display: none;
-    }
-    .mobile-ann{
-        display: initial;
-        margin-top: 4rem;
-        width: 200%;
-        justify-content: center;
-    }
-    .desktop-ann{
-        display: none;
-    }
-    .announcement{
-        width: 50%;
-        padding: 0rem 0rem;
-    }
-    .Catergory{
-        padding: 0rem 2rem;
-        margin-top: 1rem;
-    
-    }
-    .see-all{
-        padding: 0rem 2rem;
-        margin-top: 1rem;
-
-    
-    }
-}
-
 
 @media screen and (min-width: 1200px){
     .product-items{
@@ -408,6 +377,8 @@ img{
 
 
 @media(max-width:900px){
+    
+/*header responsiveness*/
 
     header{
         padding:20px;
@@ -452,6 +423,45 @@ img{
     header .navbar ul li ul li ul{
         width:100%;
         left:0;
+    }
+    .row{
+        margin-left: 2rem;
+            }
+    
+    /*Social media responsiveness*/
+
+    .mobile-fb{
+        display: initial;
+        margin-top: 4rem;
+    }
+    .desktop-fb{
+        display: none;
+    }
+    .mobile-ann{
+        display: initial;
+        margin-top: 4rem;
+        width: 200%;
+        justify-content: center;
+    }
+    .desktop-ann{
+        display: none;
+    }
+    .announcement{
+        width: 50%;
+        padding: 0rem 0rem;
+    }
+    /*Featured Catergory*/
+
+    .Catergory{
+        padding: 0rem 2rem;
+        margin-top: 1rem;
+    
+    }
+    .see-all{
+        padding: 0rem 2rem;
+        margin-top: 1rem;
+
+    
     }
     
 }
