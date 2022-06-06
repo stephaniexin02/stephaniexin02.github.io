@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
 
+/*General Page settings*/
 
 *{
     margin:0;
@@ -9,6 +10,8 @@
     text-transform: capitalize;
     text-decoration: none;
 }
+
+/*Navigation Header*/
 
 header{
     position: fixed;
@@ -109,6 +112,7 @@ header #searchbar{
     display:initial;
 }
 
+/*Footer*/
 
 .footer{
     background-color: #FDF8E5;
@@ -137,6 +141,8 @@ clear: both;
 .footer-logo img{
 width: 5%;
 }
+
+/*Products*/
 
 .Catergory{
     font-size: 25px;
@@ -276,6 +282,8 @@ img{
     opacity: 1;
 }
 
+/*Page numbers*/
+
 .page-number-btns{
     display: flex;
     justify-content: center;
@@ -307,6 +315,8 @@ img{
 }
 
 
+/*Product Responsiveness*/
+
 @media screen and (min-width: 992px){
     .product-items{
         display: grid;
@@ -335,6 +345,8 @@ img{
         padding: 0rem 8rem;
     }
 }
+
+/*Header Responsiveness*/
 
 @media(max-width:900px){
 
@@ -384,6 +396,9 @@ img{
     }
     
 }
+
+/*Products Responsiveness*/
+
 @media(max-width:500px){
     .column{
         width:100%;
@@ -391,62 +406,6 @@ img{
     }
 }
 
-
-
-@media(max-width:900px){
-
-    header{
-        padding:20px;
-    }
-    header label{
-        display:initial;
-    }
-    #searchbar {
-        width: 100%;
-        font-size: 15px;
-        padding: 11px;
-        display:none;
-        background-color: white;
-        border-radius: 0;
-        height: 4rem;
-    
-      }
-    header .navbar{
-        position: absolute;
-        top:100%;
-        left:0;
-        right:0;
-        background: #FDF8E5;
-        border-top: 1px solid rgba(0,0,0,.1);
-        display:none;
-    }
-    header .shopping-cart, .location, .saved{
-        background-color: #ECDEBB;
-    }
-
-    header .navbar ul li{
-        width: 100%;
-    }
-    header .navbar ul li ul{
-        position: relative;
-        width:100%;
-
-    }
-    header .navbar ul li ul li{
-        background:white;
-    }
-    header .navbar ul li ul li ul{
-        width:100%;
-        left:0;
-    }
-    
-}
-@media(max-width:500px){
-    .column{
-        width:100%;
-        padding:0.5rem 0;
-    }
-}
 @media screen and (max-width: 992px){
     .row{
         margin-left: 2rem;
