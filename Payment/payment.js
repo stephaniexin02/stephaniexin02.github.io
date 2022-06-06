@@ -1,3 +1,4 @@
+/Validation Attempt/
 const form=document.getElementById('user-info');
 const cardName=document.getElementById('card-name');
 const cardNum=document.getElementById('card-num');
@@ -37,10 +38,6 @@ else{
 function setErrorFor(input, message){
     const infoTxt=input.parentElement;
     infoTxt.cardName = 'info-txt error';
-}
-function setSuccessFor(input){
-    const infoTxt=input.parentElement;
-    infoTxt.cardName = 'info-txt success';
 }
 function isCardNum(cardNum){
     return '^[0-9]{13,19}$'.test(cardNum);
