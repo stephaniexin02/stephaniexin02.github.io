@@ -245,10 +245,10 @@ width: 5%;
 }
 
 
-
-.product-container{
+/*Product Images*/
+.card-wrapper{
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 10rem auto;
 }
 
 img{
@@ -258,9 +258,13 @@ img{
 
 }
 
+.img-display{
+    overflow: hidden;
+}
 .product-img{
     overflow:hidden;
 }
+
 .product-showcase{
     display: flex;
     width: 100%;
@@ -270,7 +274,7 @@ img{
 .product-showcase img{
     min-width:100%;
 }
-.select-image{
+.img-select{
     display: flex;
 }
 
