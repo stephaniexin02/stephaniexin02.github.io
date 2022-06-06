@@ -1,3 +1,4 @@
+//Set consts//
 const imgs = document.querySelectorAll('.img-select a');
 const imgBtns = [...imgs];
 let imgId = 1;
@@ -10,6 +11,7 @@ imgBtns.forEach((imgItem) => {
     });
 });
 
+//Slide Functions//
 function slideImage(){
     const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
 
