@@ -8,6 +8,9 @@
     text-transform: capitalize;
     text-decoration: none;
 }
+
+/*Header*/
+
 .order-header{
     position: absolute;
     top:0;
@@ -28,12 +31,18 @@
     width:auto;
     height:5rem
 }
+
+/*Page*/
+
 body {
     padding:0;
     margin-top:12rem;
     min-height:100vh;
     background-color: white;
 }
+
+
+/*Form*/
 
 .container{
     max-width: 1100px;
@@ -109,6 +118,9 @@ input[type=text]{
     font-weight: 100;
     margin-top: 0rem;
 }
+
+/*Cart Summary*/
+
 .order-summary{
     font-weight:bolder;
 }
@@ -150,6 +162,18 @@ input[type=text]{
     background:white;
     color:#5639CC;
 }
+
+.btn-home a{ 
+    text-transform: uppercase;
+    background:white;
+    color:#5639CC;
+}
+
+.btn-home:hover a{
+    text-transform: uppercase;
+    color:white;
+}
+    
 .btn-home:hover{
     background:#5639CC;
     color:white;
@@ -173,6 +197,17 @@ input[type=text]{
     border-color: #706D6D;
 
 }
+
+.btn-checkout a{
+    text-transform: uppercase;
+    color:#000000;
+}
+
+.btn-checkout:hover a{
+    color:white;
+    border-color: #706D6D;
+
+}
 .order-footer{
     background-color: #FDF8E5;
     padding: 0px 7%;
@@ -184,6 +219,7 @@ input[type=text]{
     margin-top: 3rem;
 }
 
+/*Page Responsiveness*/
 
 @media screen and (max-width:900px){
     
@@ -227,37 +263,4 @@ input[type=text]{
     z-index: 1000;
     height: 10rem;
     margin-top: 3rem;
-}
-
-@media screen and (max-width:900px){
-    
-    .remove{
-        display:none;
-    }
-    .user-box{
-    width:100%;
-    margin-right: 1rem;
-    }
-    .container{
-        display: inline-block;
-    }
-    .order-steps, .container h1{
-        margin-left: 1rem;
-    }
-
-    .block{
-        display: inline-block;
-        padding: 1rem 1rem 1rem 1rem;
-    }
-  
-    .order-footer, .order-header{
-        width:360px;
-        max-width: 160%;
-    }
-    .product-name, .product-price{
-        margin-bottom: 10px;
-    }
-    .logo{
-        height:1rem;
-    }
 }
