@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
 
+/*Page Layout*/
+
 *{
     margin:0;
     padding:0;
@@ -8,6 +10,9 @@
     text-transform: capitalize;
     text-decoration: none;
 }
+
+/*Header*/
+
 .order-header{
     position: absolute;
     top:0;
@@ -29,12 +34,16 @@
     width:auto;
     height:5rem
 }
+
+
 body {
     padding:0;
     margin-top:12rem;
     min-height:100vh;
     background-color: white;
 }
+
+/*Payment Form*/
 
 .container{
     max-width: 1100px;
@@ -104,6 +113,9 @@ body {
     
 }
 
+/*Validation Attempt*/
+
+
 .user-box.success{
 	border-color: #2ecc71;
 	visibility: visible;
@@ -132,6 +144,9 @@ input[type=text]{
     font-weight: 100;
     margin-top: .5rem;
 }
+
+/*Order Summary*/
+
 .order-summary{
     font-weight:bolder;
 }
@@ -207,11 +222,10 @@ input[type=text]{
     margin-top: 3rem;
 }
 
+
 @media screen and (max-width:900px){
-    
-    .remove{
-        display:none;
-    }
+    /*Page Responsiveness*/
+
     .user-box{
     width:100%;
     margin-right: 1rem;
