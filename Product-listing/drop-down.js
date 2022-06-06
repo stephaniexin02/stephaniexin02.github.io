@@ -1,15 +1,15 @@
-const faqItemHead = document.querySelectorAll('.faq-item-head');
+const ddItemHead = document.querySelectorAll('.dd-item-head');
 
 
-faqItemHead.forEach((head, index) => {
+ddItemHead.forEach((head, index) => {
     head.addEventListener('click', () => {
-        let icon = head.querySelector('.faq-item-icon').firstElementChild;
-        if(icon.className == "fa fa-chevron-down"){
+        let icon = head.querySelector('.dd-item-icon').firstElementChild;
+        if(icon.className == "dd-down"){
             head.nextElementSibling.classList.add('show-para');
-            icon.className = "fa fa-chevron-up";
-        } else if(icon.className == "fa fa-chevron-up"){
+            icon.className = "dd-up";
+        } else if(icon.className == "dd-up"){
             head.nextElementSibling.classList.remove('show-para');
-            icon.className = "fa fa-chevron-down";
+            icon.className = "dd-down";
         }
     });
 });
