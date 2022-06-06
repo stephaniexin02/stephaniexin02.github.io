@@ -8,6 +8,8 @@
     text-transform: capitalize;
     text-decoration: none;
 }
+
+/*Header*/
 .order-header{
     position: absolute;
     top:0;
@@ -35,6 +37,8 @@ body {
     min-height:100vh;
     background-color: white;
 }
+
+/*Information Form*/
 
 .container{
     max-width: 1100px;
@@ -104,6 +108,9 @@ input[type=text]{
     font-weight: 100;
     margin-top: 1rem;
 }
+
+/*Order Summary*/
+
 .order-summary{
     font-weight:bolder;
 }
@@ -168,6 +175,9 @@ input[type=text]{
     border-color: #706D6D;
 
 }
+
+/*Footer*/
+
 .order-footer{
     background-color: #FDF8E5;
     padding: 0px 7%;
@@ -180,10 +190,7 @@ input[type=text]{
 }
 
 @media screen and (max-width:900px){
-    
-    .remove{
-        display:none;
-    }
+    /*Form Responsiveness*/
     .user-box{
     width:100%;
     margin-right: 1rem;
@@ -199,7 +206,8 @@ input[type=text]{
         display: inline-block;
         padding: 1rem 1rem 1rem 1rem;
     }
-  
+	
+     /*Footer, Header Responsiveness*/
     .order-footer, .order-header{
         width:360px;
         max-width: 160%;
